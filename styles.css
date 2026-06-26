@@ -1816,3 +1816,54 @@ section {
     gap: 24px;
   }
 }
+
+/* Deployment polish: keep video blocks cinematic even after performance tweaks. */
+.video-stage,
+.final-video-stage {
+  width: 100%;
+  min-width: 0;
+  background:
+    radial-gradient(circle at 50% 30%, rgba(39, 223, 242, 0.14), transparent 44%),
+    rgba(5, 13, 20, 0.94);
+}
+
+.feature-video {
+  width: 100%;
+  min-height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+
+.final-section {
+  grid-template-columns: minmax(360px, 0.68fr) minmax(720px, 1.32fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: center;
+}
+
+.final-media {
+  width: 100%;
+  justify-self: stretch;
+}
+
+.final-video-stage {
+  width: 100%;
+  max-width: none;
+  margin-left: auto;
+  aspect-ratio: 16 / 9;
+}
+
+.final-video-stage .feature-video {
+  height: 100%;
+  aspect-ratio: auto;
+}
+
+@media (max-width: 1220px) {
+  .final-section {
+    grid-template-columns: 1fr;
+  }
+
+  .final-video-stage {
+    max-width: none;
+    margin-left: 0;
+  }
+}
