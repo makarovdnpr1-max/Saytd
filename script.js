@@ -172,25 +172,5 @@ if (reportForm && reportPoint && reportWave && statusToast && statusId && submit
   });
 }
 
-document.addEventListener(
-  "wheel",
-  (event) => {
-    const startPosition = window.scrollY;
-    const delta = event.deltaMode === 1 ? event.deltaY * 18 : event.deltaY;
-
-    window.requestAnimationFrame(() => {
-      const atTop = startPosition <= 0 && delta < 0;
-      const atBottom =
-        startPosition + window.innerHeight >= document.documentElement.scrollHeight - 2 && delta > 0;
-
-      if (window.scrollY === startPosition && !atTop && !atBottom) {
-        window.scrollBy({ top: delta, left: 0, behavior: "auto" });
-      }
-
-    });
-  },
-  { passive: true }
-);
-
 updateTopbar();
 window.addEventListener("scroll", updateTopbar, { passive: true });
