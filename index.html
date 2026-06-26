@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Дмитрий Макаров — система работы Даниловского района</title>
+    <meta
+      name="description"
+      content="Персональный сайт Дмитрия Макарова: не обещания, а система работы с обращениями жителей Даниловского района."
+    />
+    <link rel="stylesheet" href="styles.css?v=20260626-2" />
+  </head>
+  <body>
+    <div class="ambient ambient-left" aria-hidden="true"></div>
+    <div class="ambient ambient-right" aria-hidden="true"></div>
+    <div class="noise-grid" aria-hidden="true"></div>
+
+    <header class="topbar" id="topbar">
+      <a class="brand-legal" href="#hero" aria-label="Главная">
+        <img src="assets/new-people-logo.png" alt="Новые люди" />
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="topnav">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="topnav" id="topnav" aria-label="Навигация">
+        <a href="#video">Почему я?</a>
+        <a href="#system">Как работает система</a>
+        <a href="#report">Оставить обращение</a>
+        <a href="#final">Контакты</a>
+      </nav>
+
+      <a class="button button-primary button-header" href="#report">Сообщить о проблеме</a>
+    </header>
+
+    <main class="page-shell">
+      <section class="hero-section" id="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">Кандидат в депутаты Даниловского района Москвы</span>
+          <h1>Дмитрий<br />Макаров</h1>
+          <p class="hero-subtitle">Не политик старой школы.<br />Строю систему, где житель получает<br />помощь быстро и прозрачно.</p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#report">Сообщить о проблеме</a>
+            <a class="button button-secondary" href="#video">Посмотреть концепцию</a>
+          </div>
+
+          <div class="hero-metrics">
+            <span class="hero-metrics-label">Система работает уже сегодня</span>
+            <div class="hero-metrics-grid">
+              <div><strong>17</strong><span>обращений<br />сегодня</span></div>
+              <div><strong>9</strong><span>в работе</span></div>
+              <div><strong>6</strong><span>решено</span></div>
+              <div><strong>2</strong><span>новых</span></div>
+            </div>
+            <small>Данные обновляются в реальном времени</small>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-poster-shell" aria-hidden="true">
+            <span class="hero-poster-haze hero-poster-haze-a"></span>
+            <span class="hero-poster-haze hero-poster-haze-b"></span>
+            <span class="hero-poster-grid"></span>
+
+            <div class="hero-map-cluster">
+              <img class="hero-map-image" src="assets/danilovsky-neon-outline.png" alt="Контур Даниловского района" />
+
+              <div class="hero-problem hero-problem-a">
+                <span class="hero-problem-dot new"></span>
+                <div class="hero-problem-label">
+                  <strong>Сломали площадку</strong>
+                  <em>Новая проблема</em>
+                </div>
+              </div>
+
+              <div class="hero-problem hero-problem-b">
+                <span class="hero-problem-dot work"></span>
+                <div class="hero-problem-label">
+                  <strong>Уборка улицы</strong>
+                  <em>В работе</em>
+                </div>
+              </div>
+
+              <div class="hero-problem hero-problem-c">
+                <span class="hero-problem-dot done"></span>
+                <div class="hero-problem-label">
+                  <strong>Аварийное дерево</strong>
+                  <em>Решено</em>
+                </div>
+              </div>
+            </div>
+
+            <img class="hero-portrait-image" src="assets/dmitry-hero-cutout.png" alt="Дмитрий Макаров" />
+            <span class="hero-poster-shine"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-section" id="video">
+        <div class="video-layout">
+          <div class="video-stage">
+            <video class="feature-video" controls preload="metadata" playsinline>
+              <source src="assets/campaign-video-new.mp4" type="video/mp4" />
+              Ваш браузер не поддерживает видео.
+            </video>
+          </div>
+
+          <div class="video-offer">
+            <span class="eyebrow">Видеообращение</span>
+            <h2>Почему я лучший кандидат?</h2>
+            <p class="video-offer-text">
+              Я иду в политику для того, чтобы каждая проблема жителей района была услышана и решена
+              в кратчайшее время.
+            </p>
+            <a class="button button-secondary video-button" href="#system">Смотреть видео</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="system-section" id="system">
+        <div class="system-copy">
+          <span class="eyebrow">Как работает район будущего</span>
+          <h2>Каждая проблема получает маршрут до решения. Публично и прозрачно.</h2>
+
+          <div class="workflow">
+            <article class="workflow-item">
+              <span class="workflow-index">1</span>
+              <div>
+                <strong>Житель пишет о проблеме</strong>
+                <p>Простое сообщение через форму или AI-бота</p>
+              </div>
+            </article>
+
+            <article class="workflow-item">
+              <span class="workflow-index">2</span>
+              <div>
+                <strong>AI определяет ответственного</strong>
+                <p>Система находит орган и формирует обращение</p>
+              </div>
+            </article>
+
+            <article class="workflow-item">
+              <span class="workflow-index">3</span>
+              <div>
+                <strong>Обращение видно публично</strong>
+                <p>Статус обновляется в реальном времени</p>
+              </div>
+            </article>
+
+            <article class="workflow-item">
+              <span class="workflow-index">4</span>
+              <div>
+                <strong>Каждый видит результат</strong>
+                <p>Решения публикуются на карте и в каналах</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="hud-panel" id="map">
+          <div class="hud-screen">
+            <img class="hud-outline" src="assets/danilovsky-neon-outline.png" alt="Контур Даниловского района" />
+            <span class="report-wave map-wave" id="report-wave" aria-hidden="true"></span>
+            <span class="report-point map-report-point" id="report-point" aria-hidden="true"></span>
+            <span class="hud-scan"></span>
+
+            <div class="hud-problem hud-problem-a">
+              <span class="hud-point hud-point-new point-a"></span>
+              <div class="hud-problem-label">
+                <strong>Сломали площадку</strong>
+                <span><i class="legend-dot legend-dot-new"></i>Новая проблема</span>
+              </div>
+            </div>
+
+            <div class="hud-problem hud-problem-b">
+              <span class="hud-point hud-point-work point-b"></span>
+              <div class="hud-problem-label">
+                <strong>Уборка улицы</strong>
+                <span><i class="legend-dot legend-dot-work"></i>В работе</span>
+              </div>
+            </div>
+
+            <div class="hud-problem hud-problem-c">
+              <span class="hud-point hud-point-done point-c"></span>
+              <div class="hud-problem-label">
+                <strong>Аварийное дерево</strong>
+                <span><i class="legend-dot legend-dot-done"></i>Решено</span>
+              </div>
+            </div>
+
+            <div class="hud-legend" aria-hidden="true">
+              <span><i class="legend-dot legend-dot-new"></i>Новые</span>
+              <span><i class="legend-dot legend-dot-work"></i>В работе</span>
+              <span><i class="legend-dot legend-dot-done"></i>Решено</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="report-panel" id="report">
+          <span class="eyebrow">Сообщите о проблеме</span>
+          <p class="report-intro">Ваше обращение появится на карте района</p>
+
+          <form class="report-form" id="report-form" novalidate>
+            <label>
+              <span class="sr-only">Ваше имя</span>
+              <input type="text" name="name" placeholder="Ваше имя" />
+            </label>
+
+            <label>
+              <span class="sr-only">Адрес</span>
+              <input type="text" name="location" placeholder="Адрес (необязательно)" />
+            </label>
+
+            <label>
+              <span class="sr-only">Опишите проблему</span>
+              <textarea name="issue" rows="6" placeholder="Опишите проблему" required></textarea>
+            </label>
+
+            <button class="button button-primary button-full" id="submit-button" type="submit">Отправить</button>
+          </form>
+
+          <div class="report-status" id="report-status">
+            <div class="status-toast" id="status-toast">
+              <strong>✓ Обращение зарегистрировано</strong>
+              <span>Статус: В работе</span>
+              <small id="status-id">ID: DM-2027-00124</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-section" id="final">
+        <div class="final-copy">
+          <span class="eyebrow">Видеообращение</span>
+          <h2>Наша политика должна быть прозрачной.</h2>
+          <p>Если проблема существует — она должна быть зарегистрирована.</p>
+          <p>Если обращение принято — должен быть известен исполнитель.</p>
+          <p>Если работа выполнена — результат должен увидеть каждый.</p>
+          <ul class="final-points">
+            <li>Не обещания...</li>
+            <li>Скорость!</li>
+            <li>Ответственность!</li>
+            <li>Публичность!</li>
+          </ul>
+          <div class="final-actions">
+            <a class="button button-primary" href="#report">Сообщить о проблеме</a>
+            <a class="button button-secondary telegram-link" href="https://t.me/danilovsky_novye_ludi" target="_blank" rel="noopener">Перейти в Telegram</a>
+          </div>
+        </div>
+
+        <div class="final-media">
+          <div class="video-stage final-video-stage">
+            <video class="feature-video" controls preload="metadata" playsinline>
+              <source src="assets/address-video-new.mp4" type="video/mp4" />
+              Ваш браузер не поддерживает видео.
+            </video>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js?v=20260626-2"></script>
+  </body>
+</html>

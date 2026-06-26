@@ -1,0 +1,7 @@
+server.log
+server.err.log
+node_modules/
+.DS_Store
+Thumbs.db
+assets/campaign-video.mp4
+assets/address-video.mp4

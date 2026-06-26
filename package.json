@@ -1,0 +1,12 @@
+{
+  "name": "dmitry-makarov-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal one-page site for Dmitry Makarov.",
+  "scripts": {
+    "start": "node preview-server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
