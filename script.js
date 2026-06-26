@@ -186,13 +186,13 @@ if (!prefersReducedMotion) {
   const animateScroll = () => {
     const distance = targetScroll - window.scrollY;
 
-    if (Math.abs(distance) < 0.6) {
+    if (Math.abs(distance) < 0.8) {
       window.scrollTo(0, targetScroll);
       smoothScrollFrame = 0;
       return;
     }
 
-    window.scrollTo(0, window.scrollY + distance * 0.16);
+    window.scrollTo(0, window.scrollY + distance * 0.22);
     smoothScrollFrame = window.requestAnimationFrame(animateScroll);
   };
 
@@ -207,7 +207,7 @@ if (!prefersReducedMotion) {
       event.preventDefault();
 
       const delta = event.deltaMode === 1 ? event.deltaY * 18 : event.deltaY;
-      targetScroll = clampScroll(targetScroll + delta * 0.92);
+      targetScroll = clampScroll(targetScroll + delta * 0.82);
 
       if (!smoothScrollFrame) {
         smoothScrollFrame = window.requestAnimationFrame(animateScroll);
@@ -225,6 +225,12 @@ if (!prefersReducedMotion) {
     },
     { passive: true }
   );
+
+  window.addEventListener("hashchange", () => {
+    window.requestAnimationFrame(() => {
+      targetScroll = window.scrollY;
+    });
+  });
 }
 
 updateTopbar();
