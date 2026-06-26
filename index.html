@@ -8,7 +8,9 @@
       name="description"
       content="Персональный сайт Дмитрия Макарова: не обещания, а система работы с обращениями жителей Даниловского района."
     />
-    <link rel="stylesheet" href="styles.css?v=20260626-3" />
+    <link rel="preload" as="image" href="assets/dmitry-hero-cutout.png" />
+    <link rel="preload" as="image" href="assets/danilovsky-neon-outline.png" />
+    <link rel="stylesheet" href="styles.css?v=20260626-4" />
   </head>
   <body>
     <div class="ambient ambient-left" aria-hidden="true"></div>
@@ -17,7 +19,7 @@
 
     <header class="topbar" id="topbar">
       <a class="brand-legal" href="#hero" aria-label="Главная">
-        <img src="assets/new-people-logo.png" alt="Новые люди" />
+        <img src="assets/new-people-logo.png" alt="Новые люди" loading="eager" decoding="async" />
       </a>
 
       <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="topnav">
@@ -66,7 +68,7 @@
             <span class="hero-poster-grid"></span>
 
             <div class="hero-map-cluster">
-              <img class="hero-map-image" src="assets/danilovsky-neon-outline.png" alt="Контур Даниловского района" />
+              <img class="hero-map-image" src="assets/danilovsky-neon-outline.png" alt="Контур Даниловского района" loading="eager" decoding="async" />
 
               <div class="hero-problem hero-problem-a">
                 <span class="hero-problem-dot new"></span>
@@ -93,7 +95,7 @@
               </div>
             </div>
 
-            <img class="hero-portrait-image" src="assets/dmitry-hero-cutout.png" alt="Дмитрий Макаров" />
+            <img class="hero-portrait-image" src="assets/dmitry-hero-cutout.png" alt="Дмитрий Макаров" loading="eager" decoding="async" />
             <span class="hero-poster-shine"></span>
           </div>
         </div>
@@ -102,7 +104,7 @@
       <section class="video-section" id="video">
         <div class="video-layout">
           <div class="video-stage">
-            <video class="feature-video" controls preload="metadata" playsinline>
+            <video class="feature-video" controls preload="none" playsinline>
               <source src="assets/campaign-video-new.mp4" type="video/mp4" />
               Ваш браузер не поддерживает видео.
             </video>
@@ -162,7 +164,7 @@
 
         <div class="hud-panel" id="map">
           <div class="hud-screen">
-            <img class="hud-outline" src="assets/danilovsky-neon-outline.png" alt="Контур Даниловского района" />
+            <img class="hud-outline" src="assets/danilovsky-neon-outline.png" alt="Контур Даниловского района" loading="lazy" decoding="async" />
             <span class="report-wave map-wave" id="report-wave" aria-hidden="true"></span>
             <span class="report-point map-report-point" id="report-point" aria-hidden="true"></span>
             <span class="hud-scan"></span>
@@ -253,7 +255,7 @@
 
         <div class="final-media">
           <div class="video-stage final-video-stage">
-            <video class="feature-video" controls preload="metadata" playsinline>
+            <video class="feature-video" controls preload="none" playsinline>
               <source src="assets/address-video-new.mp4" type="video/mp4" />
               Ваш браузер не поддерживает видео.
             </video>
@@ -262,6 +264,6 @@
       </section>
     </main>
 
-    <script src="script.js?v=20260626-3"></script>
+    <script src="script.js?v=20260626-4"></script>
   </body>
 </html>

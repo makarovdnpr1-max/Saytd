@@ -172,5 +172,32 @@ if (reportForm && reportPoint && reportWave && statusToast && statusId && submit
   });
 }
 
+document.addEventListener(
+  "wheel",
+  (event) => {
+    const interactive = event.target.closest("video, textarea, input, select, button");
+    if (interactive) {
+      return;
+    }
+
+    const startPosition = window.scrollY;
+    const delta = event.deltaMode === 1 ? event.deltaY * 18 : event.deltaY;
+
+    window.requestAnimationFrame(() => {
+      const documentHeight = document.documentElement.scrollHeight;
+      const atTop = startPosition <= 0 && delta < 0;
+      const atBottom = startPosition + window.innerHeight >= documentHeight - 2 && delta > 0;
+
+      if (window.scrollY === startPosition && !atTop && !atBottom) {
+        window.scrollTo({
+          top: Math.max(0, Math.min(documentHeight - window.innerHeight, startPosition + delta)),
+          behavior: "auto",
+        });
+      }
+    });
+  },
+  { passive: true }
+);
+
 updateTopbar();
 window.addEventListener("scroll", updateTopbar, { passive: true });
