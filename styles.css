@@ -1834,6 +1834,12 @@ section {
   object-fit: cover;
 }
 
+.video-layout {
+  grid-template-columns: minmax(720px, 1.32fr) minmax(360px, 0.68fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: center;
+}
+
 .final-section {
   grid-template-columns: minmax(360px, 0.68fr) minmax(720px, 1.32fr);
   gap: clamp(28px, 5vw, 72px);
@@ -1852,12 +1858,18 @@ section {
   aspect-ratio: 16 / 9;
 }
 
+.video-stage {
+  aspect-ratio: 16 / 9;
+}
+
+.video-stage .feature-video,
 .final-video-stage .feature-video {
   height: 100%;
   aspect-ratio: auto;
 }
 
 @media (max-width: 1220px) {
+  .video-layout,
   .final-section {
     grid-template-columns: 1fr;
   }
