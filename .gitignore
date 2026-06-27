@@ -1,6 +1,9 @@
 server.log
 server.err.log
 node_modules/
+.codex-video-tools/
+poster-capture.html
+assets/*-poster.png
 .DS_Store
 Thumbs.db
 assets/campaign-video.mp4
