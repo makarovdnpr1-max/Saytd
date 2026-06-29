@@ -10,7 +10,9 @@
     />
     <link rel="preload" as="image" href="assets/dmitry-hero-cutout.png" />
     <link rel="preload" as="image" href="assets/danilovsky-neon-outline.png" />
-    <link rel="stylesheet" href="styles.css?v=20260627-scroll" />
+    <link rel="preload" as="image" href="assets/campaign-video-cover.jpg?v=20260629-frame" />
+    <link rel="preload" as="image" href="assets/address-video-cover.jpg?v=20260629-frame" />
+    <link rel="stylesheet" href="styles.css?v=20260629-video-frame" />
   </head>
   <body>
     <div class="ambient ambient-left" aria-hidden="true"></div>
@@ -104,7 +106,7 @@
       <section class="video-section" id="video">
         <div class="video-layout">
           <div class="video-stage">
-            <video class="feature-video" controls preload="metadata" playsinline>
+            <video class="feature-video" controls preload="none" playsinline webkit-playsinline poster="assets/campaign-video-cover.jpg?v=20260629-frame">
               <source src="assets/campaign-video-new.mp4" type="video/mp4" />
               Ваш браузер не поддерживает видео.
             </video>
@@ -255,7 +257,7 @@
 
         <div class="final-media">
           <div class="video-stage final-video-stage">
-            <video class="feature-video" controls preload="metadata" playsinline>
+            <video class="feature-video" controls preload="none" playsinline webkit-playsinline poster="assets/address-video-cover.jpg?v=20260629-frame">
               <source src="assets/address-video-new.mp4" type="video/mp4" />
               Ваш браузер не поддерживает видео.
             </video>
@@ -264,6 +266,6 @@
       </section>
     </main>
 
-    <script src="script.js?v=20260627-scroll"></script>
+    <script src="script.js?v=20260629-video-frame"></script>
   </body>
 </html>
